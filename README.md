@@ -1,8 +1,10 @@
 
 Author : Nikethan Selvanathan
+
 Date : 07/01/2016
 
 About -
+	
 	This is a Node application which will enable an user to add, update and delete event to a  particular Google Account's Calendar.(particular Google Account has to Authorize this app)
 
 Walkthrough - 
@@ -25,14 +27,15 @@ Walkthrough -
 		Now open the index.html in any browser.
 
 Usage - 
+	
 	First make a curl call to http://localhost:6001/api/getAuthorizationURL and get Authorization URL for your google account.(From the URL you will get a Authorization code).
 
 	Now make a curl call to http://localhost:6001/api/setAuthorization/ with your Authorization code got from the first curl call as an appended path value.
 
 	Now you are been enable to create, update and delete Event to that particular Google Account which has been authorized.
 
-		Create an Event - http://localhost:6001/api/addCalendarEntry/ ** with respective value asked in Swagger document
+	Create an Event - http://localhost:6001/api/addCalendarEntry/ ** with respective value asked in Swagger document
 
-		Update and Event - http://localhost:6001/api/updateEvent/ ** with respective value asked in Swagger document
+	Update and Event - http://localhost:6001/api/updateEvent/ ** with respective value asked in Swagger document
 
-		Dalete and Event - http://localhost:6001/api/deleteEvent/ ** with respective value asked in Swagger document
+	Delete and Event - http://localhost:6001/api/deleteEvent/ ** with respective value asked in Swagger document
